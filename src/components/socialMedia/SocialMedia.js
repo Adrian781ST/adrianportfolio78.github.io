@@ -24,12 +24,12 @@ export default function socialMedia() {
         <span></span>
       </a>
       <a
-        href={`mailto:${socialMediaLinks.gmail}`}
+        href={socialMediaLinks.gmail}
         className="icon-button google"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-google"></i>
+        <i className="fab fa-whatsapp"></i>
         <span></span>
       </a>
       <a

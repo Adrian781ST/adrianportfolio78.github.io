@@ -80,7 +80,7 @@ function Header(props) {
           <ul className="menu">
             <li>
               <NavLink
-                className="homei"
+                className="cr"
                 to="/home"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
@@ -91,29 +91,29 @@ function Header(props) {
             </li>
             <li>
               <NavLink
-                className="ec"
+                className="cr"
                 to="/education"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Education and Certifications
+                Education
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="xp"
+                className="cr"
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Experience
+                Topics
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="projects"
+                className="cr"
                 to="/projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
@@ -130,26 +130,14 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Contact and Resume
+                HIRE ME
               </NavLink>
             </li>
-            <li>
-              <a
-                className="cr"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://play.google.com/store/apps/details?id=com.picle.journalify"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
-                Journalify
-              </a>
-            </li>
-            <button {...styles} onClick={changeTheme}>
-              {icon}
-            </button>
+            <li></li>
           </ul>
+          <button {...styles} onClick={changeTheme}>
+            {icon}
+          </button>
         </header>
       </div>
     </Fade>

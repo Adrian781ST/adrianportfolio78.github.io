@@ -50,8 +50,10 @@ function Contact(props) {
               <SocialMedia />
               <br />
               <br />
+              <br />
+              <br />
               <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
+                HOME
               </a>
             </div>
           </div>
@@ -68,15 +70,8 @@ function Contact(props) {
               >
                 {blogSection["subtitle"]}
               </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Medium Profile
-                </a>
-              </div>
             </div>
-            <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
-            </div>
+            <div className="blog-heading-img-div"></div>
           </div>
         </Fade>
       </div>
