@@ -2,17 +2,18 @@
   "private": true,
   "name": "opportfolio",
   "version": "1.2.0",
-  "homepage": "http://hrishi.tech/",
+  "homepage": "Adrian781ST.github.io//MIPORTFOLIO.git",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/Adrian781ST/MIPORTFOLIO",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
   "dependencies": {
     "baseui": "^12.2.0",
+    "gh-pages": "^5.0.0",
     "glamor": "^2.20.40",
     "react": "^16.8.0",
     "react-bootstrap": "^2.6.0",
