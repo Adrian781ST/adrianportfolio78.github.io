@@ -2,11 +2,11 @@
   "private": true,
   "name": "opportfolio",
   "version": "1.2.0",
-  "homepage": "Adrian781ST.github.io/MIPORTFOLIO.git",
+  "homepage": "https://github.com/Adrian781ST/adrianportfolio78.github.io/tree/main/src",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https:/Adrian781ST/MIPORTFOLIO",
+    "deploy": "gh-pages -d build ",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test"
