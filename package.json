@@ -2,7 +2,7 @@
   "private": true,
   "name": "opportfolio",
   "version": "1.2.0",
-  "homepage": "https://github.com/Adrian781ST/adrianportfolio78.github.io/tree/main/src",
+  "homepage": "https://github.com/Adrian781ST/adrianportfolio78.github.io/",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
