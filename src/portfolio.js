@@ -209,7 +209,7 @@ const projects = {
   data: [
     {
       name: "Contador de clic's",
-      url: "",
+      url: "https://counter-clics.vercel.app/",
       description: "Contar y reiniciar",
       languages: [
         {
