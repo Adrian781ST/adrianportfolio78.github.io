@@ -25,7 +25,7 @@ const socialMediaLinks = {
   github: "https://github.com/Adrian781ST",
   linkedin: "https://www.linkedin.com/in/adrian78/",
   gmail:
-    "https://wa.me/+52573232448228?text=Are%20u%20lookin%20a%20developer?%20%20%20%20%20%20%20%20hooray!%20%20you%20are%20in%20the%20correct%20place",
+    "https://wa.me/+573232448228?text=Are%20u%20lookin%20a%20developer?%20%20%20%20%20%20%20%20hooray!%20%20you%20are%20in%20the%20correct%20place",
   gitlab: " ",
   facebook: " ",
   twitter: "https://twitter.com/SmoshDeep",
