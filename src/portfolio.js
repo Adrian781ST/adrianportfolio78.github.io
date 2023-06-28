@@ -119,6 +119,14 @@ const skills = {
             color: "#E94E32",
           },
         },
+
+        {
+          skillName: "Photoshop",
+          fontAwesomeClassname: "simple-icons:ps",
+          style: {
+            color: "FFF",
+          },
+        },
       ],
     },
   ],
@@ -133,8 +141,8 @@ const degrees = {
       alt_name: "DAL",
       duration: "2022 - 2023",
       descriptions: [
-        "⚡ Studied Advanced Software Development Concepts, Good Architecture",
-        "⚡  ",
+        "⚡ Studied Advanced Software Development Concepts",
+        "⚡ Good Architecture",
       ],
       website_link: "",
     },
@@ -153,7 +161,7 @@ const certifications = {
     },
 
     {
-      title: "Developer",
+      title: "Dev",
       subtitle: "Scholarship Program",
       logo_path: "google_logo.png",
       certificate_link: "https://graduation.udacity.com/confirm/HLE7K5V3",
@@ -208,13 +216,18 @@ const contactPageData = {
 const projects = {
   data: [
     {
-      name: "Contador de clic's",
-      url: "https://counter-clics.vercel.app/",
-      description: "Contar y reiniciar",
+      name: "Michelle López Portfolio",
+      url: "https://michph.netlify.app/",
+      description:
+        "A responsive blog to show all her works, it's simple, but cute.",
       languages: [
         {
           name: "ReactJS",
           iconifyClass: "logos-react",
+        },
+        {
+          name: "TypeScript",
+          iconifyClass: "logos-typescript",
         },
       ],
     },
@@ -222,7 +235,7 @@ const projects = {
       name: "Friendly Calculator",
       url: "",
       description:
-        "Just a calculator, for example you can calculate your sucess",
+        "Just a calculator, for example you can calculate your success",
       languages: [
         {
           name: "ReactJS",
@@ -231,9 +244,10 @@ const projects = {
       ],
     },
     {
-      name: "op",
-      url: "",
-      description: "",
+      name: "opContador de clic's",
+      url: "https://counter-clics.vercel.app/",
+      description:
+        "it's only a counter, u can count here and clean to start again",
       languages: [
         {
           name: "ReactJS",
@@ -243,29 +257,29 @@ const projects = {
     },
 
     {
-      name: "Lensinator",
+      name: "",
       url: " ",
       description: "",
       languages: [
         {
-          name: "JavaScript",
-          iconifyClass: "logos-java",
+          name: "",
+          iconifyClass: "",
         },
         {
-          name: "Python",
-          iconifyClass: "logos-python",
+          name: "",
+          iconifyClass: "",
         },
         {
-          name: "Firebase",
-          iconifyClass: "logos-firebase",
+          name: "",
+          iconifyClass: "",
         },
       ],
     },
 
     {
-      name: " (WIP)",
+      name: "",
       url: "",
-      description: "A video summarization webapp. .",
+      description: "",
       languages: [
         {
           name: "JavaScript",
@@ -292,10 +306,6 @@ const projects = {
           iconifyClass: "logos-python",
         },
         {
-          name: "Firebase",
-          iconifyClass: "logos-firebase",
-        },
-        {
           name: "ReactJS",
           iconifyClass: "logos-react",
         },
@@ -306,17 +316,17 @@ const projects = {
       ],
     },
     {
-      name: "Food",
+      name: "",
       url: " ",
       description: "",
       languages: [
         {
-          name: "Flutter",
-          iconifyClass: "logos-flutter",
+          name: "",
+          iconifyClass: "",
         },
         {
-          name: "Dart",
-          iconifyClass: "logos-dart",
+          name: "",
+          iconifyClass: "",
         },
       ],
     },
