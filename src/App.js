@@ -25,6 +25,7 @@ function App() {
     <ThemeProvider theme={themes[theme]}>
       <>
         <GlobalStyles />
+
         <div>
           {useCursor ? (
             <CursorProvider

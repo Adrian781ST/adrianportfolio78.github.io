@@ -6,8 +6,9 @@ const lightTheme = {
   text: "#343434",
   dark: "#000000",
   secondaryText: "#7F8DAA",
-  accentColor: "#E3405F",
-  accentBright: "#FC1056",
+  // changed from pink/red to softer blue tones to reduce bright pink highlights
+  accentColor: "#1976D2",
+  accentBright: "#2196F3",
   projectCard: "#DCE4F2",
   skinColor: "#F7B799",
   skinColor2: "#FCB696",
@@ -23,8 +24,9 @@ const darkTheme = {
   text: "#FFFFFF",
   dark: "#000000",
   secondaryText: "#8D8D8D",
-  accentColor: "#E3405F",
-  accentBright: "#FC1056",
+  // changed from pink/red to softer blue tones to reduce bright pink highlights
+  accentColor: "#1976D2",
+  accentBright: "#2196F3",
   projectCard: "#292A2D",
   skinColor: "#F7B799",
   skinColor2: "#FCB696",

@@ -1,21 +1,19 @@
-/* Change this file to get your personal Porfolio */
-
 // Website related settings
 const settings = {
-  isSplash: false, // Change this to true if you want to use the splash screen.
+  isSplash: true, // Change this to true if you want to use the splash screen.
   useCustomCursor: true, // Change this to false if you want the good'ol cursor
   googleTrackingID: "UA-174238252-2",
 };
 
 //Home Page
 const greeting = {
-  title: "Hello.",
+  title: "BIENVENIDOS.",
   title2: "Adrián",
-  logo_name: "ADRIAN PORTFOLIO",
+  logo_name: "AM BITACODING",
   nickname: "",
-  full_name: "Adrián Melo",
+  full_name: "ADRIÁN MELO",
   subTitle:
-    "Full Stack Developer: A day u won't learn something it's a day lost.",
+    "FULL STACK DEVELOPER: Aqui hacemos de todo un poco... keep going and never stop",
   resumeLink: "",
   mail: "smoshdeep@gmail.com",
 };
@@ -35,12 +33,12 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Full Stack Developer",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive websites using ReactJS.",
-
-        "⚡ Creating application backend in Node, Express & others.",
+        "⚡ Creando sitios web responsivos utilizando las tecnologías más recientes",
+        "⚡ Estructurando proyectos completos impulsados por buena arquitectura alrededor de las necesidades de los interesados o cualquier cliente.",
+        "⚡ Construyendo backend y frontend de aplicaciones bajo las mejores prácticas y recomendaciones de la industria.",
       ],
       softwareSkills: [
         {
@@ -66,21 +64,6 @@ const skills = {
           },
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#f89820",
-          },
-        },
-
-        {
-          skillName: "Visual Basic",
-          fontAwesomeClassname: "simple-icons:dot-net",
-          style: {
-            color: "#029FCE",
-          },
-        },
-        {
           skillName: "C#",
           fontAwesomeClassname: "simple-icons:csharp",
           style: {
@@ -98,13 +81,6 @@ const skills = {
         },
 
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
           style: {
@@ -117,14 +93,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:git",
           style: {
             color: "#E94E32",
-          },
-        },
-
-        {
-          skillName: "Photoshop",
-          fontAwesomeClassname: "simple-icons:ps",
-          style: {
-            color: "FFF",
           },
         },
       ],
@@ -143,6 +111,9 @@ const degrees = {
       descriptions: [
         "⚡ Studied Advanced Software Development Concepts",
         "⚡ Good Architecture",
+        "⚡ Teamwork",
+        "⚡ Problem Solving",
+        "⚡ Leadership",
       ],
       website_link: "",
     },
@@ -152,8 +123,8 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Google of Code 2022",
-      subtitle: "Code Labs",
+      title: "Programación con enfasis en Desarrollo web",
+      subtitle: "Universidad de Caldas",
       logo_path: "google_logo.png",
       certificate_link: " ",
       alt_name: "Google",
@@ -161,49 +132,40 @@ const certifications = {
     },
 
     {
-      title: "Dev",
-      subtitle: "Scholarship Program",
+      title: "Analisis y Desarrollo de software ADSO",
+      subtitle: "Scholarship Program by SENA en curso",
       logo_path: "google_logo.png",
-      certificate_link: "https://graduation.udacity.com/confirm/HLE7K5V3",
+      certificate_link: "",
       alt_name: "Google",
       color_code: "#C5E2EE",
-    },
-    {
-      title: "Winner ",
-      subtitle: "2022",
-      logo_path: "google_logo.png",
-      certificate_link: " ",
-      alt_name: "InOut",
-      color_code: "#fffbf3",
     },
   ],
 };
 
 // Experience Page
 const experience = {
-  title: "Topics",
+  title: "INTERESES",
   subtitle: "",
   description:
-    "I am looking for job offers, if you are interested in working together do not hesitate to write me!",
+    "Estoy buscando oportunidades donde pueda contribuir en proyectos innovadores, nuevos retos y ser parte de la solución que necesitas.",
   header_image_path: "experience.svg",
   sections: [],
 };
 
 // Projects Page
 const projectsHeader = {
-  title: "Projects",
+  title: "CREACIONES",
   description:
-    "My projects makes use of vast variety of latest technology tools. Below are some of my projects.  (?):  not all of the mentioned projects are up yet, i keep working in that.",
+    "Mis trabajos usan gran variedad de herramientas, tambien puedo adaptarme si el proyecto lo requiere, todo en pro de cumplir los objetivos planteados.",
   avatar_image_path: "projects_image.svg",
 };
 
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
+    title: "SI NECESITAS ALGO NO DUDES EN ESCRIBIR",
     profile_image_path: "hrishi2.png",
-    description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
+    description: " Te respondere lo más pronto posible. ",
   },
   blogSection: {
     title: "",
@@ -219,7 +181,7 @@ const projects = {
       name: "Michelle López Portfolio",
       url: "https://michph.netlify.app/",
       description:
-        "A responsive blog to show all her works, it's simple, but cute.",
+        "A responsive blog to show all her works, it's simple, but minimalist. is under maintanence",
       languages: [
         {
           name: "ReactJS",
@@ -247,7 +209,7 @@ const projects = {
       name: "opContador de clic's",
       url: "https://counter-clics.vercel.app/",
       description:
-        "it's only a counter, u can count here and clean to start again",
+        "it's a simple counter, u can count here and clean to start again",
       languages: [
         {
           name: "ReactJS",
@@ -255,44 +217,23 @@ const projects = {
         },
       ],
     },
-
-    {
-      name: "",
-      url: " ",
-      description: "",
-      languages: [
-        {
-          name: "",
-          iconifyClass: "",
-        },
-        {
-          name: "",
-          iconifyClass: "",
-        },
-        {
-          name: "",
-          iconifyClass: "",
-        },
-      ],
-    },
-
     {
       name: "",
       url: "",
       description: "",
       languages: [
         {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
+          name: "",
+          /*iconifyClass: "logos-javascript",*/
         },
         {
           name: "Python",
-          iconifyClass: "logos-python",
+          /*iconifyClass: "logos-python",*/
         },
       ],
     },
 
-    {
+    /*{
       name: "Project ",
       url: "",
       description: "An aadhard-card",
@@ -314,7 +255,7 @@ const projects = {
           iconifyClass: "logos-mongodb",
         },
       ],
-    },
+    },*/
     {
       name: "",
       url: " ",
@@ -322,26 +263,11 @@ const projects = {
       languages: [
         {
           name: "",
-          iconifyClass: "",
+          /*iconifyClass: "logos-python",*/
         },
         {
           name: "",
-          iconifyClass: "",
-        },
-      ],
-    },
-    {
-      name: "Image ",
-      url: " ",
-      description: "",
-      languages: [
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "Jupyter Notebook",
-          iconifyClass: "logos-jupyter",
+          /*iconifyClass: "logos-jupyter",*/
         },
       ],
     },

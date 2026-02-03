@@ -1,5 +1,5 @@
 .contact-main {
-  width: 100%;
+  width: 95%;
 }
 
 .basic-contact {
@@ -193,7 +193,7 @@
   }
 
   .contact-heading-div {
-    flex-direction: column;
+    flex-direction: grid;
   }
 
   .contact-header-detail-text {

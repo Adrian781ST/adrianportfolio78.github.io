@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     // flex-direction: column;
     // justify-content: center;
-    // height: 100vh;
+    // height: 95vh;
     // margin: 0;
     // padding: 0;
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

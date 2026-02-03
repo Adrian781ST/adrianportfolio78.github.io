@@ -25,6 +25,7 @@ export default function Main(propss) {
                 />
               )}
             />
+
             <Route
               path="/home"
               render={(props) => (
@@ -95,17 +96,6 @@ export default function Main(propss) {
       <div>
         <HashRouter basename="/">
           <Switch>
-            <Route
-              path="/"
-              exact
-              render={(props) => (
-                <Home
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
             <Route
               path="/home"
               render={(props) => (
