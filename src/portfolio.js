@@ -133,7 +133,8 @@ const certifications = {
 
     {
       title: "Analisis y Desarrollo de software ADSO",
-      subtitle: "Scholarship Program by SENA en curso",
+      subtitle:
+        "Scholarship Program by SENA <span class='neon-green'>en curso</span>",
       logo_path: "google_logo.png",
       certificate_link: "",
       alt_name: "Google",

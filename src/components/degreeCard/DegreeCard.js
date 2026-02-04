@@ -122,6 +122,7 @@ function DegreeCard(props) {
             >
               <p
                 {...button_visit}
+                onClick={() => alert("Estamos en proceso de despliegue")}
                 style={{
                   marginRight: "23px",
                   textDecoration: "none",
@@ -129,7 +130,7 @@ function DegreeCard(props) {
                   backgroundColor: theme.accentColor,
                 }}
               >
-                Visit Website
+                WEBSITE
               </p>
             </a>
           </div>

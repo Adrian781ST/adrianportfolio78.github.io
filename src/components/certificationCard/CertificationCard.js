@@ -48,9 +48,8 @@ function CertificationCard(props) {
           <h3
             className="cert-body-subtitle"
             style={{ color: theme.secondaryText }}
-          >
-            {certificate.subtitle}
-          </h3>
+            dangerouslySetInnerHTML={{ __html: certificate.subtitle }}
+          ></h3>
         </div>
       </div>
     </Fade>

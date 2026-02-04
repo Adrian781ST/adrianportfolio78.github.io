@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { contactPageData, socialMediaLinks } from "../../portfolio.js";
+import { contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
@@ -51,12 +51,8 @@ function Contact(props) {
               <br />
               <br />
               <br />
-              <a
-                {...styles}
-                className="general-btn"
-                href={socialMediaLinks.github}
-              >
-                HOME
+              <a {...styles} className="general-btn" href="/">
+                VOLVER
               </a>
             </div>
           </div>

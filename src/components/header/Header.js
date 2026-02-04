@@ -117,14 +117,14 @@ function Header(props) {
                 to="/projects"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 5 }}
               >
-                CONSTRUCCIONES
+                CREACIONES
               </NavLink>
             </li>
             <li>
               <NavLink
-                className="cr"
+                className="cr neon-aquamarine"
                 to="/contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}

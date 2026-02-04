@@ -28,12 +28,7 @@ function Projects(props) {
               <ProjectsImg theme={theme} />
             </div>
             <div className="projects-heading-text-div">
-              <h1
-                className="projects-heading-text"
-                style={{ color: theme.text }}
-              >
-                {projectsHeader.title}
-              </h1>
+              <h1 className="projects-heading-text">{projectsHeader.title}</h1>
               <p
                 className="projects-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}

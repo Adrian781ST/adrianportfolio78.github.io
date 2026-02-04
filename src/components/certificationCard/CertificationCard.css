@@ -38,6 +38,21 @@
   margin: 10px;
 }
 
+.neon-green {
+  color: #39ff14 !important;
+  text-shadow: 0 0 3px #39ff14, 0 0 6px #39ff14;
+  animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    text-shadow: 0 0 3px #39ff14, 0 0 6px #39ff14;
+  }
+  to {
+    text-shadow: 0 0 2px #39ff14, 0 0 4px #39ff14;
+  }
+}
+
 .content {
   position: relative;
   width: 100%;

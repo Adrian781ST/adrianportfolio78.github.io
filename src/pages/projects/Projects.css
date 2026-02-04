@@ -37,6 +37,8 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 80px;
+  color: #b0e0e6 !important;
+  text-shadow: 0 0 5px #b0e0e6, 0 0 10px #b0e0e6;
 }
 
 .projects-heading-sub-text {

@@ -174,9 +174,24 @@
 }
 
 .cr:hover {
-  box-shadow: 0 1px 10px #47a148;
-  background-color: #47a148;
+  box-shadow: 0 1px 10px #87ceeb;
+  background-color: #87ceeb;
   color: #ffffff !important;
+}
+
+.neon-aquamarine {
+  color: #87ceeb !important;
+  text-shadow: 0 0 3px #87ceeb, 0 0 6px #87ceeb;
+  animation: aquamarinePulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes aquamarinePulse {
+  from {
+    text-shadow: 0 0 3px #87ceeb, 0 0 6px #87ceeb;
+  }
+  to {
+    text-shadow: 0 0 2px #87ceeb, 0 0 4px #87ceeb;
+  }
 }
 
 /* 48em = 768px */

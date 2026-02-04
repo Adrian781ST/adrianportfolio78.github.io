@@ -19,9 +19,7 @@ function Education(props) {
               <EducationImg theme={theme} />
             </div>
             <div className="heading-text-div">
-              <h1 className="heading-text" style={{ color: theme.text }}>
-                EDUCACIÓN
-              </h1>
+              <h1 className="heading-text">EDUCACIÓN</h1>
               <h3 className="heading-sub-text" style={{ color: theme.text }}>
                 Un poco de la trayectoria por la que hemos pasado..
               </h3>
