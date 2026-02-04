@@ -1,0 +1,27 @@
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.music-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #87ceeb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #87ceeb;
+}
+
+.music-btn:hover {
+  background: rgba(135, 206, 235, 0.3);
+  box-shadow: 0 0 10px #87ceeb, 0 0 20px #87ceeb;
+  transform: scale(1.1);
+}
