@@ -7,6 +7,8 @@ import { GlobalStyles } from "./global";
 import { CursorProvider } from "react-cursor-custom";
 import { settings } from "./portfolio";
 import ReactGA from "react-ga";
+import StarfieldComponent from "./components/starfield/StarfieldComponent";
+import Reproductor from "./components/reproductor/Reproductor";
 
 function App() {
   useEffect(() => {
@@ -25,8 +27,10 @@ function App() {
     <ThemeProvider theme={themes[theme]}>
       <>
         <GlobalStyles />
+        <StarfieldComponent />
 
         <div>
+          <Reproductor />
           {useCursor ? (
             <CursorProvider
               color={themes[theme].secondaryText}
