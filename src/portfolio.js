@@ -33,12 +33,12 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
-      title: "Full Stack Developer",
+      title: "Desarrollo Full Stack",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Creando sitios web responsivos utilizando las tecnologías más recientes",
-        "⚡ Estructurando proyectos completos impulsados por buena arquitectura alrededor de las necesidades de los interesados o cualquier cliente.",
-        "⚡ Construyendo backend y frontend de aplicaciones bajo las mejores prácticas y recomendaciones de la industria.",
+        "⚡ Creacion de sitios web responsivos utilizando las tecnologías más recientes",
+        "⚡ Estructuracion de proyectos completos impulsados por buena arquitectura alrededor de las necesidades de los interesados o cualquier cliente.",
+        "⚡ Construccion de backend y frontend de aplicaciones bajo las mejores prácticas y recomendaciones de la industria.",
       ],
       softwareSkills: [
         {
@@ -179,11 +179,63 @@ const contactPageData = {
 const projects = {
   data: [
     {
-      name: "Michelle López Portfolio",
+      name: "JAGUAR",
+      url: "https://pantheronca.netlify.app",
+      description: " Sitio web interactivo sobre jaguares creado en Vite",
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "simple-icons:html5",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "fa-css3",
+          color: "#1572B6",
+        },
+        {
+          name: "Javascript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Vite",
+          iconifyClass: "simple-icons:vite",
+          color: "#646CFF",
+        },
+      ],
+    },
+
+    {
+      name: "FRIENDLY CALCULATOR",
+      url: "https://mi-calculadora-two.vercel.app/",
+      description:
+        "Just a calculator, for example you can calculate your success",
+      languages: [
+        {
+          name: "CSS3",
+          iconifyClass: "fa-css3",
+          color: "#1572B6",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Javascript",
+          iconifyClass: "logos-javascript",
+        },
+      ],
+    },
+    {
+      name: "MICHELLE LÓPEZ BLOG",
       url: "https://michph.netlify.app/",
       description:
         "A responsive blog to show all her works, it's simple, but minimalist. is under maintanence",
       languages: [
+        {
+          name: "CSS3",
+          iconifyClass: "fa-css3",
+          color: "#1572B6",
+        },
         {
           name: "ReactJS",
           iconifyClass: "logos-react",
@@ -195,41 +247,19 @@ const projects = {
       ],
     },
     {
-      name: "Friendly Calculator",
-      url: "",
-      description:
-        "Just a calculator, for example you can calculate your success",
-      languages: [
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-      ],
-    },
-    {
-      name: "opContador de clic's",
+      name: "CONTADOR DE CLIC'S",
       url: "https://counter-clics.vercel.app/",
       description:
         "it's a simple counter, u can count here and clean to start again",
       languages: [
         {
+          name: "CSS3",
+          iconifyClass: "fa-css3",
+          color: "#1572B6",
+        },
+        {
           name: "ReactJS",
           iconifyClass: "logos-react",
-        },
-      ],
-    },
-    {
-      name: "",
-      url: "",
-      description: "",
-      languages: [
-        {
-          name: "",
-          /*iconifyClass: "logos-javascript",*/
-        },
-        {
-          name: "Python",
-          /*iconifyClass: "logos-python",*/
         },
       ],
     },
@@ -257,21 +287,6 @@ const projects = {
         },
       ],
     },*/
-    {
-      name: "",
-      url: " ",
-      description: "",
-      languages: [
-        {
-          name: "",
-          /*iconifyClass: "logos-python",*/
-        },
-        {
-          name: "",
-          /*iconifyClass: "logos-jupyter",*/
-        },
-      ],
-    },
   ],
 };
 

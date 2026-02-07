@@ -41,7 +41,7 @@
   white-space: nowrap;
   line-height: 1.1;
   text-overflow: ellipsis;
-  color: rgb(36, 41, 46);
+  color: #b0e0e6;
   font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
   font-size: 25px;
@@ -49,6 +49,7 @@
   letter-spacing: -0.5px;
   overflow: hidden;
   margin: 0px;
+  text-shadow: 0 0 3px #b0e0e6;
 }
 
 .repo-star-svg {
