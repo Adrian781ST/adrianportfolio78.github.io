@@ -8,11 +8,6 @@ import { Modal } from "react-bootstrap";
 export default function ProjectCard({ repo: project, theme }) {
   const [showModal, setShowModal] = useState(false);
 
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   const handleCardClick = () => {
     setShowModal(true);
   };
