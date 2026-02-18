@@ -116,3 +116,21 @@
     width: 100%;
   }
 }
+
+.website-btn {
+  background-color: #3ecf8e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.website-btn:hover {
+  background-color: #2daa6f;
+  box-shadow: 0 5px 15px rgba(62, 207, 142, 0.4);
+}

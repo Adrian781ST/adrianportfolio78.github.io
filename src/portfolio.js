@@ -143,8 +143,8 @@ const certifications = {
       certificate_link: " ",
       alt_name: "Google",
       color_code: "#ffc475",
+      website_link: "https://supermigrante.netlify.app",
     },
-
     {
       title: "Analisis y Desarrollo de software ADSO",
       subtitle:
