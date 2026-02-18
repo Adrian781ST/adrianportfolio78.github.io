@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
@@ -21,15 +21,7 @@ function getGreeting() {
 export default function Greeting(props) {
   const theme = props.theme;
   const history = useHistory();
-  const [greetingText, setGreetingText] = useState(getGreeting());
-
-  useEffect(() => {
-    // Actualizar el saludo cada minuto
-    const interval = setInterval(() => {
-      setGreetingText(getGreeting());
-    }, 60000);
-    return () => clearInterval(interval);
-  }, []);
+  const greetingText = getGreeting();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
