@@ -168,6 +168,8 @@
   .contact-heading-img-div {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .address-heading-text {
@@ -193,7 +195,13 @@
   }
 
   .contact-heading-div {
-    flex-direction: grid;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-heading-img-div img {
+    max-width: 80%;
+    height: auto;
   }
 
   .contact-header-detail-text {
