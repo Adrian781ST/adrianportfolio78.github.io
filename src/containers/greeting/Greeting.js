@@ -45,12 +45,12 @@ export default function Greeting(props) {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">{greeting.title}</h1>
-              <h2
+              <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.accentColor, marginTop: "10px" }}
               >
                 {greetingText}
-              </h2>
+              </p>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
