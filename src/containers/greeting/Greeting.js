@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
@@ -7,9 +7,29 @@ import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
+function getGreeting() {
+  const hour = new Date().getHours();
+  if (hour >= 6 && hour < 12) {
+    return "Buenos días";
+  } else if (hour >= 12 && hour < 18) {
+    return "Buenas tardes";
+  } else {
+    return "Buenas noches";
+  }
+}
+
 export default function Greeting(props) {
   const theme = props.theme;
   const history = useHistory();
+  const [greetingText, setGreetingText] = useState(getGreeting());
+
+  useEffect(() => {
+    // Actualizar el saludo cada minuto
+    const interval = setInterval(() => {
+      setGreetingText(getGreeting());
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -25,6 +45,12 @@ export default function Greeting(props) {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">{greeting.title}</h1>
+              <h2
+                className="greeting-text-p subTitle"
+                style={{ color: theme.accentColor, marginTop: "10px" }}
+              >
+                {greetingText}
+              </h2>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}

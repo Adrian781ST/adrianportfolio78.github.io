@@ -25,7 +25,13 @@ function ProjectLanguages(props) {
                   <span
                     className="iconify"
                     data-icon={logo.iconifyClass}
-                    style={logo.color ? { color: logo.color } : {}}
+                    style={
+                      logo.style
+                        ? logo.style
+                        : logo.color
+                        ? { color: logo.color }
+                        : {}
+                    }
                     data-inline="false"
                   ></span>
                 </li>

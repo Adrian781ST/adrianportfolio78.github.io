@@ -28,8 +28,20 @@
 }
 
 @media (max-width: 768px) {
+  .dev-icons-languages {
+    text-align: left;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
   .software-skill-inline-languages {
-    margin-right: 10px;
-    margin-bottom: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  .software-skill-inline-languages .iconify {
+    font-size: 1.3rem;
   }
 }

@@ -95,6 +95,20 @@ const skills = {
             color: "#E94E32",
           },
         },
+        {
+          skillName: "Vite",
+          fontAwesomeClassname: "simple-icons:vite",
+          style: {
+            color: "#646CFF",
+          },
+        },
+        {
+          skillName: "Supabase",
+          fontAwesomeClassname: "simple-icons:supabase",
+          style: {
+            color: "#3ECF8E",
+          },
+        },
       ],
     },
   ],
@@ -179,18 +193,45 @@ const contactPageData = {
 const projects = {
   data: [
     {
+      name: "DON MIGRANTE ",
+      url: "https://supermigrante.netlify.app",
+      description:
+        "Plataforma web para atender migrantes que llegan en busca de oportunidades laborales, vivienda, educación,s salud o cualquier servicio de las instituciones activas en el territorio colombiano.",
+      languages: [
+        {
+          name: "JavaScript",
+          iconifyClass: "simple-icons:javascript",
+          style: {
+            color: "#F7DF1E",
+          },
+        },
+        {
+          name: "Tailwind CSS",
+          iconifyClass: "simple-icons:tailwindcss",
+        },
+        {
+          name: "Vite",
+          iconifyClass: "simple-icons:vite",
+          color: "#646CFF",
+        },
+        {
+          name: "Supabase",
+          iconifyClass: "simple-icons:supabase",
+          style: {
+            color: "#3ECF8E",
+          },
+        },
+      ],
+    },
+    {
       name: "JAGUAR",
       url: "https://pantheronca.netlify.app",
       description: " Sitio web interactivo sobre jaguares creado en Vite",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "simple-icons:html5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "fa-css3",
-          color: "#1572B6",
+          name: "Tailwind CSS",
+          iconifyClass: "simple-icons:tailwindcss",
+          color: "#a76c00",
         },
         {
           name: "Javascript",
@@ -211,17 +252,17 @@ const projects = {
         "Just a calculator, for example you can calculate your success",
       languages: [
         {
-          name: "CSS3",
-          iconifyClass: "fa-css3",
-          color: "#1572B6",
-        },
-        {
           name: "ReactJS",
           iconifyClass: "logos-react",
         },
         {
           name: "Javascript",
           iconifyClass: "logos-javascript",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "fa-css3",
+          color: "#1572B6",
         },
       ],
     },
@@ -232,9 +273,9 @@ const projects = {
         "A responsive blog to show all her works, it's simple, but minimalist. is under maintanence",
       languages: [
         {
-          name: "CSS3",
-          iconifyClass: "fa-css3",
-          color: "#1572B6",
+          name: "Tailwind CSS",
+          iconifyClass: "simple-icons:tailwindcss",
+          color: "#a711bb",
         },
         {
           name: "ReactJS",
