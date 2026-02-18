@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";

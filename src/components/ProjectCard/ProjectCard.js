@@ -21,11 +21,6 @@ export default function ProjectCard({ repo: project, theme }) {
     setShowModal(false);
   };
 
-  const handleVisitSite = () => {
-    openRepoinNewTab(project.url);
-    setShowModal(false);
-  };
-
   const styles = style({
     color: "rgb(88, 96, 105)",
     backgroundColor: "rgb(255, 255, 255)",
