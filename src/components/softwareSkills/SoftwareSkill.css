@@ -21,3 +21,18 @@
 .software-skill-inline > i:hover {
   color: #645beb;
 }
+
+@media (max-width: 768px) {
+  .dev-icons {
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .software-skill-inline {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
