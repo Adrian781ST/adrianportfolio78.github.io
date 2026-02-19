@@ -12,6 +12,7 @@
     "baseui": "^12.2.0",
     "gh-pages": "^5.0.0",
     "glamor": "^2.20.40",
+    "pdf-lib": "^1.17.1",
     "react": "^16.8.0",
     "react-bootstrap": "^2.6.0",
     "react-cursor-custom": "^1.2.4",

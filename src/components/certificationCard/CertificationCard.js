@@ -2,12 +2,21 @@ import React, { useState } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
-import { Modal } from "react-bootstrap";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
   const [showModal, setShowModal] = useState(false);
+
+  const handleOpenCert = () => {
+    if (certificate.pdf_link) {
+      setShowModal(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   const styles = style({
     boxShadow: `0px 2px 5px ${certificate.color_code}`,
@@ -17,38 +26,31 @@ function CertificationCard(props) {
     },
   });
 
-  const handleOpenWebsite = () => {
-    if (certificate.website_link) {
-      setShowModal(true);
-    }
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   return (
     <>
       <Fade bottom duration={2000} distance="20px">
-        <div className="cert-card" {...styles}>
+        <div
+          className="cert-card"
+          {...styles}
+          onClick={handleOpenCert}
+          style={{ cursor: certificate.pdf_link ? "pointer" : "default" }}
+        >
           <div className="content">
-            <a
-              href={certificate.certificate_link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div className="content-overlay"></div>
+            <div
+              className="cert-header"
+              style={{ backgroundColor: certificate.color_code }}
             >
-              <div className="content-overlay"></div>
-              <div
-                className="cert-header"
-                style={{ backgroundColor: certificate.color_code }}
-              >
-                <img
-                  className="logo_img"
-                  src={require(`../../assests/images/${certificate.logo_path}`)}
-                  alt={certificate.alt_name}
-                />
-              </div>
-            </a>
+              <img
+                className="logo_img"
+                src={
+                  certificate.logo_path.startsWith("http")
+                    ? certificate.logo_path
+                    : require(`../../assests/images/${certificate.logo_path}`)
+                }
+                alt={certificate.alt_name}
+              />
+            </div>
           </div>
           <div className="cert-body">
             <h2 className="cert-body-title" style={{ color: theme.text }}>
@@ -59,38 +61,28 @@ function CertificationCard(props) {
               style={{ color: theme.secondaryText }}
               dangerouslySetInnerHTML={{ __html: certificate.subtitle }}
             ></h3>
-            {certificate.website_link && (
-              <button className="website-btn" onClick={handleOpenWebsite}>
-                WEBSITE
-              </button>
-            )}
           </div>
         </div>
       </Fade>
 
-      {certificate.website_link && (
-        <Modal
-          show={showModal}
-          onHide={handleCloseModal}
-          centered
-          size="xl"
-          className="fullscreen-modal"
-        >
-          <Modal.Header
-            closeButton
-            style={{ backgroundColor: "#000", color: "#fff" }}
-          >
-            <Modal.Title>{certificate.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body style={{ padding: 0 }}>
-            <iframe
-              src={certificate.website_link}
-              title={certificate.title}
-              style={{ width: "100%", height: "70vh", border: "none" }}
-              allowFullScreen
-            />
-          </Modal.Body>
-        </Modal>
+      {showModal && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2>{certificate.title}</h2>
+              <button className="modal-close" onClick={handleCloseModal}>
+                ×
+              </button>
+            </div>
+            <div className="modal-body">
+              <iframe
+                src={certificate.pdf_link + "#toolbar=0&navpanes=0&scrollbar=0"}
+                title={certificate.title}
+                style={{ width: "100%", height: "100%", border: "none" }}
+              ></iframe>
+            </div>
+          </div>
+        </div>
       )}
     </>
   );

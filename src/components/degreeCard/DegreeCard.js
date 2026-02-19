@@ -7,23 +7,27 @@ function DegreeCard(props) {
   const degree = props.degree;
   const theme = props.theme;
 
+  const handleOpenWebsite = () => {
+    if (degree.website_link) {
+      window.open(degree.website_link, "_blank", "noopener,noreferrer");
+    }
+  };
+
   const style_img = style({
-    width: "220px",
-    height: "auto",
+    width: "180px",
+    height: "180px",
     borderRadius: " 50%",
-    padding: "10px",
+    padding: "15px",
     border: `1px solid ${theme.accentColor}`,
-    marginRight: "50px",
     boxShadow: `0px 0px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexShrink: 0,
     ":hover": {
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
-    },
-    "@media (max-width: 768px)": {
-      marginLeft: "50px",
-      marginBottom: "15px",
-      width: "175px",
     },
   });
 
@@ -33,7 +37,7 @@ function DegreeCard(props) {
     borderRight: `1px solid ${theme.accentColor}`,
     borderRadius: "7px",
     width: "90%",
-    margin: "10px",
+    margin: "20px 10px 10px 10px",
     boxShadow: `0px 1px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
@@ -45,41 +49,18 @@ function DegreeCard(props) {
     },
   });
 
-  const button_visit = style({
-    textDecoration: "none",
-    color: "rgba(255, 255, 255, 1)",
-    background: `${theme.accentColor}`,
-    padding: "15px 15px",
-    marginTop: "25px",
-    borderRadius: "4px",
-    borderWidth: "0px",
-    marginBottom: "20px",
-    width: "200px",
-    height: "50px",
-    fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
-    fontSize: "17px",
-    transition: "all 0.2s ease-in-out",
-    cursor: "pointer",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 10px ${theme.accentColor}`,
-    },
-  });
-
   return (
     <div className="degree-card">
       <Flip left duration={2000}>
         <div {...style_img}>
-          <img
+          <span
+            className="iconify"
+            data-icon="mdi:certificate"
             style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              transform: "scale(50%, 50%)",
+              fontSize: "70px",
+              color: "#FFFFFF",
             }}
-            src={require(`../../assests/images/${degree.logo_path}`)}
-            alt={degree.alt_name}
-          />
+          ></span>
         </div>
       </Flip>
       <Fade right duration={2000} distance="40px">
@@ -114,25 +95,18 @@ function DegreeCard(props) {
                 </p>
               );
             })}
-            <a
-              href={degree.website_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", textAlign: "center" }}
+            <button
+              className="website-btn"
+              onClick={handleOpenWebsite}
+              style={{
+                marginRight: "23px",
+                textDecoration: "none",
+                float: "right",
+                backgroundColor: theme.accentColor,
+              }}
             >
-              <p
-                {...button_visit}
-                onClick={() => alert("Estamos en proceso de despliegue")}
-                style={{
-                  marginRight: "23px",
-                  textDecoration: "none",
-                  float: "right",
-                  backgroundColor: theme.accentColor,
-                }}
-              >
-                WEBSITE
-              </p>
-            </a>
+              WEBSITE
+            </button>
           </div>
         </div>
       </Fade>

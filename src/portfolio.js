@@ -109,6 +109,20 @@ const skills = {
             color: "#3ECF8E",
           },
         },
+        {
+          skillName: "Bootstrap",
+          fontAwesomeClassname: "simple-icons:bootstrap",
+          style: {
+            color: "#563D7C",
+          },
+        },
+        {
+          skillName: "Tailwind CSS",
+          fontAwesomeClassname: "simple-icons:tailwindcss",
+          style: {
+            color: "#06B6D4",
+          },
+        },
       ],
     },
   ],
@@ -117,7 +131,7 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: " E-MIGRANT ",
+      title: " DON MIGRANTE ",
       subtitle: "Hackaton 72 hours",
       logo_path: "dal.png",
       alt_name: "DAL",
@@ -129,7 +143,7 @@ const degrees = {
         "⚡ Problem Solving",
         "⚡ Leadership",
       ],
-      website_link: "",
+      website_link: "https://supermigrante.netlify.app",
     },
   ],
 };
@@ -139,19 +153,31 @@ const certifications = {
     {
       title: "Programación con enfasis en Desarrollo web",
       subtitle: "Universidad de Caldas",
-      logo_path: "google_logo.png",
+      logo_path: "https://a.storyblok.com/f/61891/x/0b226c4507.svg",
       certificate_link: " ",
-      alt_name: "Google",
+      alt_name: "Universidad de Caldas",
       color_code: "#ffc475",
       website_link: "https://supermigrante.netlify.app",
+      pdf_link: "/certificado-desbloqueado.pdf",
+    },
+    {
+      title: "Certificación de inglés EF SET",
+      subtitle: "EF Education First",
+      logo_path: "https://a.storyblok.com/f/61891/x/aa166bd9ab/00.svg",
+      certificate_link: " ",
+      alt_name: "EF SET",
+      color_code: "#47e6b1",
+      website_link: "https://www.efset.org",
+      pdf_link: "/ef-set-certificate.pdf",
     },
     {
       title: "Analisis y Desarrollo de software ADSO",
       subtitle:
         "Scholarship Program by SENA <span class='neon-green'>en curso</span>",
-      logo_path: "google_logo.png",
+      logo_path:
+        "https://a.storyblok.com/f/61891/x/sena-logo-png_seeklogo-242896.svg",
       certificate_link: "",
-      alt_name: "Google",
+      alt_name: "SENA",
       color_code: "#C5E2EE",
     },
   ],
