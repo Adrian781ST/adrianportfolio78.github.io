@@ -233,3 +233,39 @@
     font-size: 12px;
   }
 }
+
+/* Theme toggle button positioning */
+.theme-toggle {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  margin-right: 5px;
+  margin-left: 15px;
+  padding-top: 5px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 3px 8px #646464;
+}
+
+/* Mobile: keep toggle aligned with logo */
+@media (max-width: 768px) {
+  .theme-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+  }
+
+  .header {
+    position: relative;
+  }
+}

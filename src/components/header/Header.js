@@ -135,7 +135,7 @@ function Header(props) {
             </li>
             <li></li>
           </ul>
-          <button {...styles} onClick={changeTheme}>
+          <button {...styles} onClick={changeTheme} className="theme-toggle">
             {icon}
           </button>
         </header>
