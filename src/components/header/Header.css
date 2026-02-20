@@ -256,16 +256,23 @@
   box-shadow: 0 3px 8px #646464;
 }
 
-/* Mobile: keep toggle aligned with logo */
+/* Mobile: keep toggle centered with menu */
 @media (max-width: 768px) {
   .theme-toggle {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    position: fixed;
+    right: 60px;
+    top: 18px;
     margin: 0;
+    z-index: 1002;
   }
 
   .header {
     position: relative;
+  }
+
+  .header .menu-icon {
+    position: fixed;
+    right: 10px;
+    top: 10px;
   }
 }
