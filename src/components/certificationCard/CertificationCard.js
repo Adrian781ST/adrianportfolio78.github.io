@@ -18,11 +18,16 @@ function CertificationCard(props) {
     setShowModal(false);
   };
 
+  const isUCaldas =
+    certificate.subtitle &&
+    certificate.subtitle.includes("Universidad de Caldas");
+  const borderColor = isUCaldas ? "#87ceeb" : certificate.color_code;
+
   const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
+    boxShadow: `0px 2px 5px ${borderColor}`,
+    border: `1px solid ${borderColor}`,
     ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
+      boxShadow: `0 5px 15px ${borderColor}`,
     },
   });
 
@@ -39,7 +44,10 @@ function CertificationCard(props) {
             <div className="content-overlay"></div>
             <div
               className="cert-header"
-              style={{ backgroundColor: certificate.color_code }}
+              style={{
+                backgroundColor: isUCaldas ? "#1a1a1a" : certificate.color_code,
+                borderColor: borderColor,
+              }}
             >
               <img
                 className="logo_img"
@@ -76,7 +84,13 @@ function CertificationCard(props) {
             </div>
             <div className="modal-body">
               <iframe
-                src={certificate.pdf_link + "#toolbar=0&navpanes=0&scrollbar=0"}
+                src={
+                  certificate.pdf_link
+                    ? `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(
+                        window.location.origin + certificate.pdf_link
+                      )}`
+                    : certificate.website_link
+                }
                 title={certificate.title}
                 style={{ width: "100%", height: "100%", border: "none" }}
               ></iframe>

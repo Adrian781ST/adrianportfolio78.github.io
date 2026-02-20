@@ -154,7 +154,8 @@ const certifications = {
     {
       title: "Programación con enfasis en Desarrollo web",
       subtitle: "Universidad de Caldas",
-      logo_path: "https://a.storyblok.com/f/61891/x/0b226c4507.svg",
+      logo_path:
+        "https://radcolombia.org/web/sites/default/files/archivos/instituciones/universidad-caldas/logo-uc.png",
       certificate_link: " ",
       alt_name: "Universidad de Caldas",
       color_code: "#ffc475",
@@ -162,7 +163,7 @@ const certifications = {
       pdf_link: "/certificado-desbloqueado.pdf",
     },
     {
-      title: "Certificación de inglés EF SET",
+      title: "Certificación de inglés B2 EF SET",
       subtitle: "EF Education First",
       logo_path: "https://a.storyblok.com/f/61891/x/aa166bd9ab/00.svg",
       certificate_link: " ",
@@ -176,7 +177,7 @@ const certifications = {
       subtitle:
         "Scholarship Program by SENA <span class='neon-green'>en curso</span>",
       logo_path:
-        "https://a.storyblok.com/f/61891/x/sena-logo-png_seeklogo-242896.svg",
+        "https://senacertificados.co/wp-content/uploads/2021/10/Logo-del-sena-Verde-300x300-1.jpg",
       certificate_link: "",
       alt_name: "SENA",
       color_code: "#C5E2EE",

@@ -3,7 +3,6 @@ import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
-import { Modal } from "react-bootstrap";
 
 export default function ProjectCard({ repo: project, theme }) {
   const [showModal, setShowModal] = useState(false);
@@ -54,33 +53,27 @@ export default function ProjectCard({ repo: project, theme }) {
         </div>
       </Fade>
 
-      <Modal
-        show={showModal}
-        onHide={handleCloseModal}
-        centered
-        size="xl"
-        className="fullscreen-modal"
-      >
-        <Modal.Header
-          closeButton
-          style={{ backgroundColor: theme.projectCard, color: theme.text }}
-        >
-          <Modal.Title>{project.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{ backgroundColor: theme.projectCard, padding: 0 }}>
-          <iframe
-            src={project.url}
-            title={project.name}
-            style={{
-              width: "100%",
-              height: "calc(100vh - 80px)",
-              border: "none",
-            }}
-            allow="fullscreen; clipboard-read; clipboard-write"
-            allowFullScreen
-          />
-        </Modal.Body>
-      </Modal>
+      {showModal && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2>{project.name}</h2>
+              <button className="modal-close" onClick={handleCloseModal}>
+                ×
+              </button>
+            </div>
+            <div className="modal-body">
+              <iframe
+                src={project.url}
+                title={project.name}
+                style={{ width: "100%", height: "100%", border: "none" }}
+                allow="fullscreen; clipboard-read; clipboard-write"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
