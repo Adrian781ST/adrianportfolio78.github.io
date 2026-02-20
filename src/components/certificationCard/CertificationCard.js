@@ -83,17 +83,16 @@ function CertificationCard(props) {
               </button>
             </div>
             <div className="modal-body">
-              <iframe
-                src={
-                  certificate.pdf_link
-                    ? `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(
-                        window.location.origin + certificate.pdf_link
-                      )}`
-                    : certificate.website_link
-                }
-                title={certificate.title}
-                style={{ width: "100%", height: "100%", border: "none" }}
-              ></iframe>
+              <img
+                src={certificate.pdf_link}
+                alt={certificate.title}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "80vh",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
         </div>

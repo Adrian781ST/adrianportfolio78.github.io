@@ -150,22 +150,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
   z-index: 99999 !important;
   cursor: default !important;
 }
 
 .modal-content {
-  background: #000;
-  width: 90%;
+  background: #1a1a1a;
+  width: 95%;
   max-width: 1000px;
-  height: 90vh;
+  height: auto;
+  max-height: 85vh;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   cursor: default !important;
   z-index: 100000 !important;
 }

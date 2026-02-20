@@ -160,7 +160,7 @@ const certifications = {
       alt_name: "Universidad de Caldas",
       color_code: "#ffc475",
       website_link: "https://supermigrante.netlify.app",
-      pdf_link: "/certificado-desbloqueado.pdf",
+      pdf_link: "/certificacion-caldas.png",
     },
     {
       title: "Certificación de inglés B2 EF SET",
@@ -170,17 +170,17 @@ const certifications = {
       alt_name: "EF SET",
       color_code: "#47e6b1",
       website_link: "https://www.efset.org",
-      pdf_link: "/ef-set-certificate.pdf",
+      pdf_link: "/ef-set-certificate.png",
     },
     {
       title: "Analisis y Desarrollo de software ADSO",
       subtitle:
         "Scholarship Program by SENA <span class='neon-green'>en curso</span>",
       logo_path:
-        "https://senacertificados.co/wp-content/uploads/2021/10/Logo-del-sena-Verde-300x300-1.jpg",
+        "https://www.camaraocana.com/wp-content/uploads/2025/10/logo-sena-verde-complementario-png-2022.png",
       certificate_link: "",
       alt_name: "SENA",
-      color_code: "#C5E2EE",
+      color_code: "#4df886",
     },
   ],
 };
@@ -224,7 +224,7 @@ const projects = {
       name: "DON MIGRANTE ",
       url: "https://supermigrante.netlify.app",
       description:
-        "Plataforma web para atender migrantes que llegan en busca de oportunidades laborales, vivienda, educación,s salud o cualquier servicio de las instituciones activas en el territorio colombiano.",
+        "Plataforma web para atender migrantes que llegan en busca de oportunidades laborales, vivienda, educación, salud o cualquier servicio de las instituciones activas en el territorio colombiano.",
       languages: [
         {
           name: "JavaScript",
@@ -254,7 +254,8 @@ const projects = {
     {
       name: "JAGUAR",
       url: "https://pantheronca.netlify.app",
-      description: " Sitio web interactivo sobre jaguares creado en Vite",
+      description:
+        " Sitio web interactivo sobre jaguares con galeria, información sobre su historia y conservación.",
       languages: [
         {
           name: "Tailwind CSS",
