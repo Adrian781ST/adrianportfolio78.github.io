@@ -276,3 +276,10 @@
     top: 10px;
   }
 }
+
+/* Tablet and monitor: move buttons more to the right */
+@media (min-width: 769px) {
+  .theme-toggle {
+    margin-left: 30px;
+  }
+}
