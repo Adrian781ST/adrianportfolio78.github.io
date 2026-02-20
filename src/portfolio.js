@@ -142,6 +142,7 @@ const degrees = {
         "⚡ Teamwork",
         "⚡ Problem Solving",
         "⚡ Leadership",
+        "⚡Top 4",
       ],
       website_link: "https://supermigrante.netlify.app",
     },
