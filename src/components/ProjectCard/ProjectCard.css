@@ -197,4 +197,39 @@
     justify-content: flex-start;
     gap: 5px;
   }
+
+  /* Mobile modal fixes */
+  .fullscreen-modal .modal-dialog {
+    max-width: 95%;
+    width: 95%;
+    max-height: 85vh;
+    height: 85vh;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto;
+  }
+
+  .fullscreen-modal .modal-content {
+    height: 85vh;
+    max-height: 85vh;
+  }
+
+  .fullscreen-modal .modal-header {
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  .fullscreen-modal .modal-header .modal-title {
+    font-size: 14px;
+  }
+
+  .fullscreen-modal .modal-header .close {
+    font-size: 24px;
+    right: 5px;
+  }
+
+  .fullscreen-modal .modal-body {
+    top: 50px;
+  }
 }
